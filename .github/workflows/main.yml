@@ -25,9 +25,9 @@ jobs:
     - name: Build Kernel
       uses: ./
       with:
-          kernel-url: https://github.com/RooGhz720/kernel_xiaomi_lavender
+          kernel-url: https://github.com/MiCode/Xiaomi_Kernel_OpenSource/tree/lavender-p-oss
           kernel-dir: kernel
-          kernel-branch: a13-cam
+          kernel-branch: lavender-p-oss
           config: lavender_defconfig
           arch: arm64
           aosp-gcc: true
