@@ -26,6 +26,7 @@ jobs:
       uses: ./
       with:
           kernel-url: https://github.com/RooGhz720/kernel_xiaomi_lavender
+          kernel-dir: kernel
           kernel-branch: a13-cam
           config: lavender_defconfig
           arch: arm64
@@ -37,3 +38,9 @@ jobs:
           aosp-clang-version: r383902
           disable-lto: true
           anykernel3: true
+    - name: Upload Kernel Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: kernel-artifact
+        path: path/to/your/kernel/output/*
+
